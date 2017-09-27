@@ -74,6 +74,7 @@ pre code {
 
 .slide-2 ul {
     opacity: 0.75;
+    list-style: none;
 }
 
 .exit1 {

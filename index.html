@@ -49,20 +49,89 @@
 				</section>
 
 				<section>
-				<section>
-				## History
+				<section class="slide-3">
+				## Huh?
 				</section>
 				<section>
-				## History cont.
+				## Oh, **that** "DevOps" again?
+				</section>
+				<section class="slide-4">
+				## Let's talk about *infrastructure*
+				</section>
+				<section class="slide-5">
+				## Yes **that** *infrastructure*
+				</section>
+				</section>
+				
+				<section>
+				<section class="slide-6">
+				## 
+				</section>
+				<section>
+				## Let's go back to school* for a moment
+				
+				&nbsp;* May not be a real school
+				</section>
+				<section>
+				## 
+				* Documentation - available, searchable, extensible
+				* Code comments - **EVERYWHERE**
+				* Interactive scripts <br/>(don't forget ``--no-input`` or equivalent)
+				</section>
+				</section>
+
+				<section>
+				<section class="slide-7">
+				## Exempli gratia
+				```
+				# Postgres instance for AWS to manage
+				# https://www.terraform.io/docs/providers/aws/r/db_instance.html
+				# https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html
+				resource "aws_db_instance" "reporting" {
+				  # Allocate 60GiB of storage
+				  allocated_storage = 20
+				  storage_type     = "gp2"
+				  engine          = "postgres"
+				
+				  # Type of EC2 instance to use
+				  # https://aws.amazon.com/ec2/instance-types/
+				  instance_class    = "db.t2.small"
+				```
+				</section>
+				<section>
+				## Exempli gratia (cont.)
+				```
+				$ bin/run plan
+				$ bin/run apply
+				```
+				</section>
+				</section>
+
+				<section>
+				<section>
+				## Identify patterns, record as code
+				* Etsy
+				* Netflix
+				* GDS
+				* &lt;insert unicorn here/&gt;
+				</section>
+				<section>
+				## Identify patterns, discuss, document, communicate
+				</section>
+				<section>
+				## Code, *maintain*
+				</section>
+				<section class="slide-8">
+				## **Maintain**
 				</section>
 				</section>
 
 				<section class="exit1">
 				## sys.exit(0)
-				- 	 Slides: [github.com/1stvamp/conn-check-talk](https://github.com/1stvamp/conn-check-talk)
-				- 	 [conn-check.org](http://conn-check.org/)
-				- 	 [docs.conn-check.org](http://docs.conn-check.org/)
-				- 	 `bzr branch lp:conn-check`
+				- 	 Slides: [github.com/1stvamp/ops-for-humans](https://github.com/1stvamp/ops-for-humans)
+				- 	 [HumanOps](http://humanops.com/)
+				- 	 DesignOps
+				- 	 Incident Management for IT Operations
 				</section>
 				<section class="exit2">
 				## ^D

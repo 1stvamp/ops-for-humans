@@ -54,25 +54,25 @@ pre code {
     color: #767676 !important;
 }
 
-.slide-1 {
+.slide-0 {
     background-image: url('../images/westalkbuildfail.png');
     background-position: 4em -2em;
 }
 
-.slide-1 * {
+.slide-0 * {
     opacity: 0.60;
 }
 
-.slide-1 p:first-of-type {
+.slide-0 p:first-of-type {
     margin-top: 35%;
 }
 
-.slide-2 {
+.slide-1 {
     background-image: url('../images/westalkwho.png');
     background-position: -5em 2em;
 }
 
-.slide-2 ul {
+.slide-1 ul {
     opacity: 0.75;
     list-style: none;
 }
@@ -89,13 +89,13 @@ pre code {
 
 .slide-5 {
     background-image: url('../images/graph.png');
-    background-size: 4000%;
-    background-position: -6em -2em;
+    background-position: 4em 2.5em;
+    background-size: 70%;
 }
 
 .slide-6 {
     background-image: url('../images/buzzwords.jpg');
-    background-position: 4em 2.5em;
+    background-position: 5.5em 3em;
 }
 
 .slide-7 pre, .slide-8 pre {
@@ -105,6 +105,12 @@ pre code {
 .slide-8 {
     background-image: url('../images/wolverine.gif');
     background-position: 7.5em 3em;
+}
+
+.slide-17 {
+    background-image: url('../images/amigo.webp');
+    background-size: 60%;
+    background-position: 5em 3em;
 }
 
 .exit1 {

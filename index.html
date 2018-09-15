@@ -44,27 +44,27 @@
 				<section class="who">
 				## Who?
 				- 	 <img src="../images/twitter.png"/>/ <img src="../images/github.png"/> `@1stvamp`
-				- 	 <img src="../images/verve.png"/> Senior DevOps Engineer @ [Verve](https://verve.co/)
+				- 	 <img src="../images/npm.png"/> Senior Site Reliability Engineer @ [npm](https://www.npmjs.com/)
 				- 	 <img src="../images/heart.jpg"/> Open source
 				</section>
 
 				<section>
-				<section class="slide-3">
+				<section>
 				## Huh?
 				</section>
 				<section>
 				## Oh, **that** "DevOps" again?
 				</section>
-				<section class="slide-4">
+				<section>
 				## Let's talk about *infrastructure*
 				</section>
-				<section class="slide-5">
+				<section>
 				## Yes **that** *infrastructure*
 				</section>
 				</section>
 				
 				<section>
-				<section class="slide-6">
+				<section>
 				## 
 				</section>
 				<section>
@@ -81,7 +81,7 @@
 				</section>
 
 				<section>
-				<section class="slide-7">
+				<section>
 				## Exempli gratia
 				```
 				# Postgres instance for AWS to manage
@@ -101,8 +101,10 @@
 				<section>
 				## Exempli gratia (cont.)
 				```
-				$ bin/run plan
-				$ bin/run apply
+				$ bin/install.sh
+				$ source bin/activate
+				$ terraform apply
+				$ ansible-playbook playbooks/...
 				```
 				</section>
 				</section>
@@ -117,6 +119,30 @@
 				</section>
 				<section>
 				## Identify patterns, discuss, document, communicate
+				</section>
+				<section>
+				## Don't be *too* DRY
+				</section>
+				<section>
+				## Structure is it's own documentation
+				```
+				$ ls -R
+				
+				.:
+				acl  meta  search  www
+
+				./acl:
+				resources.tf
+
+				./meta:
+				resources.tf
+
+				./search:
+				resources.tf
+
+				./www:
+				resources.tf
+				```
 				</section>
 				<section>
 				## Code, *maintain*
@@ -162,7 +188,7 @@
 				    if (el.children('section').length > 0) {
 					return true;
 				    }
-				    el.addClass('slide-' + (i+1));
+				    el.addClass('slide-' + i);
 				    el.attr('data-markdown', '1');
 			    });
 			    window.initReveal();
